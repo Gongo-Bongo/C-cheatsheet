@@ -361,12 +361,12 @@ code:not([class*="language-"]) {
         /* Add padding for smaller screens */
         font-size: 8px;
         /* Reduce font size for readability */
-        zoom: 1.2;
+        /* zoom: 1.2; */
         /* Increase zoom level for better visibility */
     }
 
     .title {
-        font-size: 28px;
+        font-size: 18px;
         /* Smaller font size for mobile */
         height: auto;
         /* Adjust height to be flexible */
@@ -376,7 +376,7 @@ code:not([class*="language-"]) {
 
     .container {
         width: 100%;
-        padding: 10px;
+        padding: 8px;
         /* Make container responsive */
     }
 
@@ -400,7 +400,7 @@ code:not([class*="language-"]) {
         /* Ensure code blocks don't overflow */
         overflow-x: auto;
         /* Allow horizontal scrolling if necessary */
-        font-size: 14px;
+        font-size: 10px;
         /* Smaller font size for code */
     }
 
@@ -414,11 +414,6 @@ code:not([class*="language-"]) {
 
 /* Media query for very small devices (up to 480px) */
 @media (max-width: 480px) {
-    body {
-        zoom: 1.4;
-        /* Increase zoom further for very small screens */
-    }
-
     .title {
         font-size: 24px;
         padding: 8px 0;
