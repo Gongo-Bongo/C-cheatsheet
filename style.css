@@ -16,7 +16,6 @@ body {
     font-style: normal;
     background-color: #1d1e1e;
     gap: 10px;
-    transition: all 0.3s ease-in-out;
 }
 
 .title {
@@ -25,35 +24,48 @@ body {
     font-weight: 400;
     font-style: normal;
     position: sticky;
+    /* Make the title sticky */
     top: 0;
+    /* Sets the top position when sticky */
     background-color: rgb(45, 44, 44);
+    /* Background color */
     width: 100%;
+    /* Full width */
     text-align: center;
+    /* Center text */
     z-index: 1000;
+    /* Ensure it appears above other content */
     height: 69px;
+    /* Fixed height */
     padding-top: 7px;
-    animation: glow 1.5s infinite alternate ease-in-out;
-    transition: all 0.4s ease;
+    /* Padding on top */
+    animation: glow 1.5s infinite alternate;
 }
 
 /* Media query for mobile view */
 @media (max-width: 768px) {
+
     body {
         width: fit-content;
     }
 
+    /* Adjust as needed for your breakpoint */
     .title {
         font-size: 28px;
+        /* Smaller font size for mobile */
         height: 50px;
+        /* Adjust height for mobile */
         padding-top: 5px;
+        /* Adjust padding for mobile */
         justify-content: center;
         align-items: center;
         width: 100%;
     }
 }
 
+
 .title p:hover {
-    animation: zoom-in 0.4s ease-in-out;
+    animation: zoom-in 0.5s ease-in-out;
 }
 
 @keyframes bounce {
@@ -64,26 +76,33 @@ body {
     80%,
     100% {
         transform: translateY(0);
+        /* Start and end at original position */
     }
 
     40% {
-        transform: translateY(-20px);
+        transform: translateY(-30px);
+        /* Move up */
     }
 
     60% {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
+        /* Move down */
     }
 }
 
 @keyframes zoom-in {
     0% {
-        transform: scale(0.9);
+        transform: scale(0.8);
+        /* Start slightly smaller */
         opacity: 0;
+        /* Start fully transparent */
     }
 
     100% {
         transform: scale(1);
+        /* End at original size */
         opacity: 1;
+        /* End fully opaque */
     }
 }
 
@@ -92,36 +111,50 @@ body {
     0%,
     100% {
         transform: translateX(0);
+        /* Start and end at original position */
     }
 
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
+    10% {
+        transform: translateX(-10px);
+        /* Move left */
+    }
+
+    20% {
+        transform: translateX(10px);
+        /* Move right */
+    }
+
+    30% {
         transform: translateX(-5px);
+        /* Move left again */
     }
 
-    20%,
-    40%,
-    60%,
-    80% {
+    40% {
         transform: translateX(5px);
+        /* Move right again */
+    }
+
+    50% {
+        transform: translateX(0);
+        /* Back to center */
     }
 }
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #fff;
+        /* Initial glow */
     }
 
     100% {
-        text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 20px #fff, 0 0 25px #fff;
+        /* Final glow */
     }
 }
 
 .container {
     width: 1218px;
+    /* background-color: #3e3e3f; */
 }
 
 .content {
@@ -129,8 +162,7 @@ body {
     color: aliceblue;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1,
@@ -145,6 +177,8 @@ h6 {
 h1 {
     color: rgb(223, 88, 247);
     font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1:hover {
@@ -152,12 +186,13 @@ h1:hover {
     padding: 7px;
     border-radius: 5px;
     /* width: fit-content; */
-    transition: background-color 0.4s ease, padding 0.3s ease;
 }
 
 h2 {
     color: rgb(123, 237, 159);
     font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2:hover {
@@ -170,6 +205,8 @@ h2:hover {
 h3 {
     color: rgb(233, 235, 145);
     font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h3:hover {
@@ -182,6 +219,8 @@ h3:hover {
 h4 {
     color: rgb(156, 231, 229);
     font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h4:hover {
@@ -194,6 +233,8 @@ h4:hover {
 h5 {
     color: rgb(240, 168, 168);
     font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h5:hover {
@@ -206,6 +247,8 @@ h5:hover {
 h6 {
     color: rgb(183, 184, 187);
     font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h6:hover {
@@ -218,6 +261,7 @@ h6:hover {
 strong {
     font-family: "Bungee Tint", sans-serif;
     font-weight: 400;
+    font-style: normal;
 }
 
 strong:hover {
@@ -231,9 +275,10 @@ pre {
     color: #ffffff !important;
     padding: 15px;
     border-radius: 8px;
+    position: relative;
     margin-bottom: 2rem;
+    /* max-height: 400px; */
     overflow: auto;
-    transition: background-color 0.3s ease;
 }
 
 pre:hover {
@@ -242,9 +287,12 @@ pre:hover {
 
 code {
     font-size: 1rem;
+    /* Increase the size for better visibility */
     line-height: 1.5;
     white-space: pre-wrap;
+    /* Ensure long lines wrap */
     word-wrap: break-word;
+    /* Handle long words properly */
 }
 
 /* Styles for inline code */
@@ -268,11 +316,15 @@ code:not([class*="language-"]) {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
-    transition: all 0.3s ease;
+}
+
+.copy-button i {
+    pointer-events: none;
+    /* Prevent clicking on the icon */
 }
 
 .copy-button:active {
-    transform: scale(0.95);
+    transform: scale(0.9);
 }
 
 .copied::after {
@@ -296,28 +348,37 @@ code:not([class*="language-"]) {
     }
 }
 
+
 /* Media query for devices with a max-width of 768px */
 @media (max-width: 768px) {
     body {
         width: 100%;
         padding: 10px;
+        /* Add padding for smaller screens */
         font-size: 16px;
+        /* Reduce font size for readability */
         zoom: 1.2;
+        /* Increase zoom level for better visibility */
     }
 
     .title {
         font-size: 28px;
+        /* Smaller font size for mobile */
         height: auto;
+        /* Adjust height to be flexible */
         padding: 10px 0;
+        /* Adjust padding for mobile */
     }
 
     .container {
         width: 100%;
         padding: 10px;
+        /* Make container responsive */
     }
 
     .content {
         padding: 15px;
+        /* Reduce padding on mobile */
     }
 
     h1,
@@ -327,19 +388,25 @@ code:not([class*="language-"]) {
     h5,
     h6 {
         font-size: 1.2rem;
+        /* Make headings smaller */
         text-align: center;
+        /* Center align headings */
     }
 
     pre {
         max-width: 100%;
+        /* Ensure code blocks don't overflow */
         overflow-x: auto;
+        /* Allow horizontal scrolling if necessary */
         font-size: 14px;
+        /* Smaller font size for code */
     }
 
     .copy-button {
         top: 5px;
         right: 5px;
         font-size: 1rem;
+        /* Adjust size of copy button */
     }
 }
 
@@ -347,16 +414,19 @@ code:not([class*="language-"]) {
 @media (max-width: 480px) {
     body {
         zoom: 1.4;
+        /* Increase zoom further for very small screens */
     }
 
     .title {
         font-size: 24px;
         padding: 8px 0;
+        /* Adjust for very small screens */
     }
 
     .content {
         font-size: 14px;
+        /* Reduce font size in content */
     }
 }
 
-
+/* make styling animations and higlighting more smoother and beautiful if possible while keeping the original features and styling same just improve the existing styling */
