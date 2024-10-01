@@ -357,7 +357,7 @@ code:not([class*="language-"]) {
 @media (max-width: 768px) {
     body {
         width: 100%;
-        padding: 10px;
+        padding: 7px;
         /* Add padding for smaller screens */
         font-size: 8px;
         /* Reduce font size for readability */
@@ -370,7 +370,7 @@ code:not([class*="language-"]) {
         /* Smaller font size for mobile */
         height: auto;
         /* Adjust height to be flexible */
-        padding: 10px 0;
+        padding: 7px 0;
         /* Adjust padding for mobile */
     }
 
@@ -381,7 +381,7 @@ code:not([class*="language-"]) {
     }
 
     .content {
-        padding: 15px;
+        padding: 10px;
         /* Reduce padding on mobile */
     }
 
@@ -400,7 +400,7 @@ code:not([class*="language-"]) {
         /* Ensure code blocks don't overflow */
         overflow-x: auto;
         /* Allow horizontal scrolling if necessary */
-        font-size: 10px;
+        font-size: 7px;
         /* Smaller font size for code */
     }
 
@@ -421,7 +421,7 @@ code:not([class*="language-"]) {
     }
 
     .content {
-        font-size: 14px;
+        font-size: 10px;
         /* Reduce font size in content */
     }
 }
