@@ -359,7 +359,7 @@ code:not([class*="language-"]) {
         width: 100%;
         padding: 7px;
         /* Add padding for smaller screens */
-        font-size: 8px;
+        font-size: 16px;
         /* Reduce font size for readability */
         /* zoom: 1.2; */
         /* Increase zoom level for better visibility */
