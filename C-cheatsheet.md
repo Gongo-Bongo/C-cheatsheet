@@ -1,6 +1,6 @@
 ### C Programming Cheat Sheet
 
-#### 1. **Basics**
+#### 1. Basics
    - **Program Structure**: 
      ```c
      #include <stdio.h>
@@ -16,7 +16,7 @@
      /* Multi-line comment */
      ```
 
-#### 2. **Data Types**
+#### 2. Data Types
    - **Primitive Types**:
      - `int` – Integer (whole numbers)
      - `float` – Floating-point number (single precision)
@@ -28,7 +28,7 @@
      - `short`, `long`, `signed`, `unsigned`
      - Example: `long int`, `unsigned char`
 
-#### 3. **Variables and Constants**
+#### 3. Variables and Constants
    - **Variable Declaration**:
      ```c
      int x = 10;
@@ -39,7 +39,7 @@
      const int z = 100;
      ```
 
-#### 4. **Input/Output**
+#### 4. Input/Output
    - **Input** (`scanf`):
      ```c
      int x;
@@ -51,14 +51,14 @@
      printf("Value: %d", x);
      ```
 
-#### 5. **Operators**
+#### 5. Operators
    - **Arithmetic**: `+`, `-`, `*`, `/`, `%`
    - **Relational**: `==`, `!=`, `>`, `<`, `>=`, `<=`
    - **Logical**: `&&`, `||`, `!`
    - **Bitwise**: `&`, `|`, `^`, `~`, `<<`, `>>`
    - **Assignment**: `=`, `+=`, `-=`, `*=`, `/=`, `%=` 
 
-#### 6. **Control Structures**
+#### 6. Control Structures*
    - **If-else**:
      ```c
      if (condition) {
@@ -101,7 +101,7 @@
        } while (condition);
        ```
 
-#### 7. **Functions**
+#### 7. Functions
    - **Syntax**:
      ```c
      returnType functionName(parameters) {
@@ -116,7 +116,7 @@
      }
      ```
 
-#### 8. **Pointers**
+#### 8. Pointers
    - **Declaration**:
      ```c
      int *ptr;
@@ -131,7 +131,7 @@
      printf("%d", *ptr);  // Output: 10
      ```
 
-#### 9. **Arrays**
+#### 9. Arrays
    - **Declaration**:
      ```c
      int arr[5];
@@ -145,7 +145,7 @@
      printf("%d", arr[0]);  // Output: 1
      ```
 
-#### 10. **Strings**
+#### 10. Strings
    - **Declaration**:
      ```c
      char str[20];
@@ -156,7 +156,7 @@
      ```
    - **Standard Library Functions**: `strlen()`, `strcpy()`, `strcmp()`
 
-#### 11. **Structures**
+#### 11. Structures
    - **Declaration**:
      ```c
      struct Person {
@@ -170,7 +170,7 @@
      p1.age = 25;
      ```
 
-#### 12. **File Handling**
+#### 12. File Handling
    - **Opening a File**:
      ```c
      FILE *fptr = fopen("filename.txt", "r");
@@ -185,7 +185,7 @@
      fscanf(fptr, "%s", str);
      ```
 
-#### 13. **Dynamic Memory Allocation**
+#### 13. Dynamic Memory Allocation
    - **`malloc` and `free`**:
      ```c
      int *ptr = (int*) malloc(sizeof(int));
@@ -200,7 +200,7 @@
      ptr = (int*) realloc(ptr, 20 * sizeof(int));
      ```
 
-#### 14. **Preprocessors**
+#### 14. Preprocessors
    - **Macros**:
      ```c
      #define PI 3.14159
@@ -212,7 +212,7 @@
      #endif
      ```
 
-#### 15. **Error Handling**
+#### 15. Error Handling
    - **Using `errno`**:
      ```c
      if (file == NULL) {
@@ -220,7 +220,7 @@
      }
      ```
 
-#### 16. **Recursion**
+#### 16. Recursion
    - **Example**:
      ```c
      int factorial(int n) {
@@ -229,7 +229,7 @@
      }
      ```
 
-#### 17. **Command Line Arguments**
+#### 17. Command Line Arguments
    - **Main Function Signature**:
      ```c
      int main(int argc, char *argv[]) {
@@ -237,12 +237,12 @@
      }
      ```
 
-#### 18. **Common Standard Library Functions**
+#### 18. Common Standard Library Functions
    - **Math functions**: `sqrt()`, `pow()`, `abs()`
    - **String functions**: `strlen()`, `strcpy()`, `strcat()`
    - **I/O functions**: `printf()`, `scanf()`, `fgets()`, `fputs()`
 
-#### 19. **Type Casting**
+#### 19. Type Casting
    - **Example**:
      ```c
      float f = (float) 5 / 2;  // Result: 2.5
